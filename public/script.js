@@ -23,7 +23,7 @@ async function generateAnswer() {
         const data = await response.json();
         answerDiv.innerHTML = data.content[0].text;
     } catch (error) {
-        answerDiv.innerHTML = "Oops! Something went wrong. Please try again!";
+        answerDiv.innerHTML = "Something went wrong. Possibly the gerbils went on strike. Please try again! If that doesn't work talk to the gerbils.";
         console.error('Error:', error);
     }
 
